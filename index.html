@@ -42,40 +42,43 @@
     </div>
     <div class="header-nav">
       <!-- 부트스트랩 네비바 -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">그릇/홈세트</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">국내도자기그릇</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">수입 주방용품</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                기타 주방용품
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="ex)1인 식기세트" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 position-relative" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+      <div class="container mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">그릇/홈세트</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">국내도자기그릇</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">수입 주방용품</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  기타 주방용품
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="ex)1인 식기세트"
+                aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 position-relative" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <div class="container-fluid px-0">
@@ -99,16 +102,19 @@
         <!-- 부트스트랩 네비바 : tabs > JavaScript behavior > pill-->
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active rounded-pill px-5" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
-              type="button" role="tab" aria-controls="pills-home" aria-selected="true">그릇</button>
+            <button class="nav-link active rounded-pill px-5" id="pills-home-tab" data-toggle="pill"
+              data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+              aria-selected="true">그릇</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-pill px-5" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
-              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">홈세트</button>
+            <button class="nav-link rounded-pill px-5" id="pills-profile-tab" data-toggle="pill"
+              data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">홈세트</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-pill px-5" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
-              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">냄비</button>
+            <button class="nav-link rounded-pill px-5" id="pills-contact-tab" data-toggle="pill"
+              data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">냄비</button>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -141,6 +147,20 @@
                 <div class="card-body">
                   <h5 class="card-title">원앤어하프 카페 서빙 세트</h5>
                   <p class="card-text">17,900원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -148,6 +168,20 @@
                 <div class="card-body">
                   <h5 class="card-title">오반자이 브라운캣츠 밥공기</h5>
                   <p class="card-text">8,500원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,6 +194,20 @@
                 <div class="card-body">
                   <h5 class="card-title">깔끔한 목화 4인 식기세트 25p</h5>
                   <p class="card-text">148,300원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -167,6 +215,20 @@
                 <div class="card-body">
                   <h5 class="card-title">뉴본차이나 화이트 4인세트 24P</h5>
                   <p class="card-text">24,900원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -174,6 +236,20 @@
                 <div class="card-body">
                   <h5 class="card-title">마리벨 4인 홈세트 26P</h5>
                   <p class="card-text">139,000원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,8 +260,22 @@
               <div class="card">
                 <img src="images/thePlate/nambi1.jpg" class="card-img-top" alt="냄비">
                 <div class="card-body">
-                  <h5 class="card-title">[까사니] IH 프라이어팟 2.2L/3.3L/오일팟</h5>
+                  <h5 class="card-title">[까사니] IH 프라이어팟 오일팟</h5>
                   <p class="card-text">25,800원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -193,6 +283,20 @@
                 <div class="card-body">
                   <h5 class="card-title">3중 스텐 냄비</h5>
                   <p class="card-text">20,500원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -200,6 +304,20 @@
                 <div class="card-body">
                   <h5 class="card-title">[탁가온] 전골뚝배기</h5>
                   <p class="card-text">79,800원</p>
+                  <div class="badge-buttons d-flex justify-content-between align-items-center">
+                    <div class="badge">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                      <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                    </div>
+                    <div class="button">
+                      <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                        <i class="bi bi-basket-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                        <i class="bi bi-credit-card-2-back"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,13 +325,143 @@
         </div>
       </div>
     </article>
+    <article>
+      <div class="container my-3">
+        <h3 class="main-title">혼밥족들을 위한</h3>
+        <p class="sub-title">데일리 식기세트</p>
+        <div class="card-deck">
+          <div class="card">
+            <img src="images/thePlate/nambi1.jpg" class="card-img-top" alt="냄비">
+            <div class="card-body">
+              <h5 class="card-title">[까사니] IH 프라이어팟 오일팟</h5>
+              <p class="card-text">25,800원</p>
+              <div class="badge-buttons d-flex justify-content-between align-items-center">
+                <div class="badge">
+                  <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                  <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                </div>
+                <div class="button">
+                  <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                    <i class="bi bi-basket-fill"></i>
+                  </button>
+                  <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                    <i class="bi bi-credit-card-2-back"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/thePlate/nambi2.jpg" class="card-img-top" alt="냄비">
+            <div class="card-body">
+              <h5 class="card-title">3중 스텐 냄비</h5>
+              <p class="card-text">20,500원</p>
+              <div class="badge-buttons d-flex justify-content-between align-items-center">
+                <div class="badge">
+                  <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                  <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                </div>
+                <div class="button">
+                  <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                    <i class="bi bi-basket-fill"></i>
+                  </button>
+                  <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                    <i class="bi bi-credit-card-2-back"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/thePlate/nambi3.jpg" class="card-img-top" alt="냄비">
+            <div class="card-body">
+              <h5 class="card-title">[탁가온] 전골뚝배기</h5>
+              <p class="card-text">79,800원</p>
+              <div class="badge-buttons d-flex justify-content-between align-items-center">
+                <div class="badge">
+                  <span class="badge badge-secondary p-3 bg-ship">무료배송</span>
+                  <span class="badge badge-secondary px-4 py-3 bg-danger">특가</span>
+                </div>
+                <div class="button">
+                  <button type="button" class="btn btn-dark rounded-circle" id="cart">
+                    <i class="bi bi-basket-fill"></i>
+                  </button>
+                  <button type="button" class="btn btn-dark rounded-circle" id="buy">
+                    <i class="bi bi-credit-card-2-back"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container-fluid px-0">
+        <img src="images/card-event.png" class="img-fluid" alt="카드사별 할부혜택">
+      </div>
+    </article>
+    <article>
+      <div class="container my-5">
+        <div class="row">
+          <div class="youtube col-sm">
+            <div class="channel-info">
+              <p class="info-title">더 플레이팅TV <button class="border-0 btn-light"><i class="bi bi-arrow-right-circle-fill"></i></button></p>
+              <p class="info-desc">도자기 그릇 플레이팅, 집밥 예쁘게 먹기,
+                테이블 세팅 기술에 대한 모든것</p>
+              <button>더 플레이팅 채널 구독하기</button>
+            </div>
+          </div>
+          <div class="embed-item col-sm">
+            <div class="embed-video embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" class="embed-responsive-item"
+                src="https://www.youtube-nocookie.com/embed/t4e9zuE6KUw?start=60" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
   </section>
-
-
-
-
-
-
+  <aside>
+    <div class="container-fluid bg-greenbean">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="news"><i class="bi bi-volume-up-fill"></i><span>공지사항</span></div>
+        <div class="move-top"><i class="bi bi-chevron-bar-up"></i></div>
+      </div>
+    </div>
+  </aside>
+  <footer class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm order-2">
+          <div class="customer">
+            <h4>고객센터</h4>
+            <p class="phone"><a href="tel:+8215447000">1544-7000</a></p>
+          </div>
+          <div class="working">
+            <p>평일, 토요일 09:00~17:00</p>
+            <p>법정 공휴일 09:00~13:00(일요일 휴무)</p>
+          </div>
+          <div class="kakao">
+            <p>카카오톡<strong>@더플레이팅</strong> 친구추가하고 소식과 혜택을 받아보세요.</p>
+          </div>
+        </div>
+        <div class="col-sm order-1">
+          <div class="brand"><h2>더 플레이팅</h2></div>
+          <address>
+            <p>사업자등록번호 : 211-81-08241 | 통신판매신고번호 : 제 2021-광주서구-0268 호</p>
+            <p>개인정보보호책임자 : 최대한 | 개인정보 관리 이메일 :  admin@theplating.kr</p>
+          </address>
+          <div class="ownership">
+            <p>&copy;The Plating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- 부트스트랩 Script CDN : Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

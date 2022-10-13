@@ -64,3 +64,16 @@
     width: 100%;
     object-fit: cover;
 }
+
+.news{
+    color: var(--white);
+}
+
+.news span{
+    font-size: .75rem;
+}
+
+.move-top{
+    background-color: var(--black);
+    color: var(--white);
+}
